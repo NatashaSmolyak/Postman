@@ -1,4 +1,4 @@
-# Postman
+# Postman ![Postman](https://img.shields.io/badge/-Postman-103606?style=for-the-badge&logo=Postman)
 1. Creating http-requests (GET, POST, PUT, PATH, DELETE).
 2. Creating collections.
 3. Creating an environment.
