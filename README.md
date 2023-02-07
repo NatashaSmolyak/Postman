@@ -5,4 +5,5 @@
 4. Writing autotests in Java Script (chai).
 5. [Certificate: Postman for testing API](https://stepik.org/cert/1936752)
 
-![Postman](https://github.com/NatashaSmolyak/Postman/blob/main/assets/Stepik_Sertificat.png)
+![Postman](https://github.com/NatashaSmolyak/Postman/blob/main/assets/Stepik_Postman_Сertificate1.png)
+
