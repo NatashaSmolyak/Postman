@@ -12,17 +12,13 @@
 #### Задача 1
 1. Отправить http-запрос методом GET: **http:162.55.220.72:5005/first**.
 2. Проверить, что возращается 200 статус код.
-
-Тест:
 ```
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
 3. Проверить, что в body приходит правильный string.
-
-Тест: 
-```
+ ```
 pm.test("Body is correct", function () {
     pm.response.to.have.body("This is the first responce from server!ss");
 });
@@ -41,14 +37,61 @@ Body запроса:
 </p> </div>
 2. Проверить, что возращается 200 статус код.
 
-Тест:
 ```
 pm.test("Status code is 200", function () {
     pm.response.to.have.status(200);
 });
 ```
-
 3. Спарсить response body в json.
 ```
 let MyData = pm.response.json();
 ```
+4. Проверить, что name в ответе равно name с request (name вбить руками.)
+```
+pm.test("Name from Response = Name from Request", function () {
+        pm.expect(MyData.name).to.eql("Natasha");
+});
+```
+5. Проверить, что age в ответе равно age c request (age вбить руками.)
+```
+pm.test("Age from Response = Age from Request", function () {
+       pm.expect(MyData.age).to.eql("50");
+});
+```
+6. Проверить, что salary в ответе равно salary c request (salary вбить руками.)
+```
+pm.test("Salary from Response = Salary from Request", function () {
+        pm.expect(MyData.salary).to.eql(5000);
+});
+```
+7. Спарсить request.
+```
+let req=request.data
+```
+9. Проверить, что name в ответе равно name s request (name забрать из request.)
+- Создаем переменные req_name, req_age, req_salary
+```
+let req_name=req.name
+let req_age=req.age
+let req_salary=+req.salary
+```
+```
+pm.test("Name from Response = Name from Request", function () {
+       pm.expect(MyData.name).to.eql(req_name);
+});
+```
+11. Проверить, что age в ответе равно age с request (age забрать из request.)
+```
+pm.test("Age from Response = Age from Request", function () {
+        pm.expect(MyData.age).to.eql(req_age);
+});
+```
+
+13. Проверить, что salary в ответе равно salary с request (salary забрать из request.)
+```
+pm.test("Salary from Response = Salary from Request", function () {
+       pm.expect(MyData.salary).to.eql(req_salary);
+});
+```
+15. Вывести в консоль параметр family из response.
+16. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
