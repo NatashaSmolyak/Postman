@@ -26,7 +26,6 @@ pm.test("Body is correct", function () {
     pm.response.to.have.body("This is the first responce from server!ss");
 });
 ```
-
-
+![image](https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_1.png)
 
 
