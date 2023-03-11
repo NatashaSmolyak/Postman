@@ -25,7 +25,7 @@ pm.test("Body is correct", function () {
 ```
 ### Тесты пройдены :ok_hand:
 <div id="screen" align="center" dir="auto">
-<p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_1.png">
+<p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_1.png">
 </p> </div>
 
 #### Задача 2
@@ -105,4 +105,9 @@ pm.test("Salary 1_5 year from Response = Salary * 4 from Request", function () {
         pm.expect(MyData.family.u_salary_1_5_year).to.eql(resp_salary_1_5_year);
 });
 ```
+
 ### Тесты пройдены :ok_hand:
+
+<div id="screen" align="center" dir="auto">
+<p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_2.png">
+</p> </div>
