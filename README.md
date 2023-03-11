@@ -246,11 +246,13 @@ console.log("Salary [2] from Response: "+ responseData.salary[2]);
 <p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/Console1_Task-4.png">
 </p> </div>
 12. Проверить, что 0-й элемент параметра salary равен salary из request (salary забрать из request.)
+
 ```
 pm.test("Salary [0] from Response = Salary from Request", function () {
     pm.expect(responseData.salary[0]).to.eql(req_salary);
 });
 ```
+
 13. Проверить, что 1-й элемент параметра salary равен salary*2 из request (salary забрать из request.)
 ```
 pm.test("Salary [1] from Response = Salary from Request*2", function () {
@@ -271,22 +273,27 @@ pm.test("Salary [1] from Response = Salary from Request*2", function () {
 <p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/Env_Var.png">
 </p> </div>
 18. Передать в окружение переменную name.
+
 ```
 pm.environment.set("name", req_name);
 ```
 19. Передать в окружение переменную age.
+
 ```pm.environment.set("age", req_age);
 ```
 20. Передать в окружение переменную salary.
+
 ```
 pm.environment.set("salary", req_salary);
 ```
 21. Написать цикл который выведет в консоль по порядку элементы списка из параметра salary.
+
 ```
 console.log("Salary output with a loop")
 for  (i=0; i<3;i++)
 {console.log("Salary ["+i+"]:"+responseData.salary[i]);}
 ```
+
 ### Тесты пройдены :ok_hand:
 
 <div id="screen" align="center" dir="auto">
