@@ -23,6 +23,7 @@ pm.test("Body is correct", function () {
     pm.response.to.have.body("This is the first responce from server!ss");
 });
 ```
+### Тесты пройдены :ok_hand:
 <div id="screen" align="center" dir="auto">
 <p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_1.png">
 </p> </div>
@@ -68,8 +69,8 @@ pm.test("Salary from Response = Salary from Request", function () {
 ```
 let req=request.data
 ```
-9. Проверить, что name в ответе равно name s request (name забрать из request.)
-- Создаем переменные req_name, req_age, req_salary
+8. Проверить, что name в ответе равно name s request (name забрать из request.)
+Создаем переменные: req_name, req_age, req_salary
 ```
 let req_name=req.name
 let req_age=req.age
@@ -80,18 +81,28 @@ pm.test("Name from Response = Name from Request", function () {
        pm.expect(MyData.name).to.eql(req_name);
 });
 ```
-11. Проверить, что age в ответе равно age с request (age забрать из request.)
+9. Проверить, что age в ответе равно age с request (age забрать из request.)
 ```
 pm.test("Age from Response = Age from Request", function () {
         pm.expect(MyData.age).to.eql(req_age);
 });
 ```
-
-13. Проверить, что salary в ответе равно salary с request (salary забрать из request.)
+10. Проверить, что salary в ответе равно salary с request (salary забрать из request.)
 ```
 pm.test("Salary from Response = Salary from Request", function () {
        pm.expect(MyData.salary).to.eql(req_salary);
 });
 ```
-15. Вывести в консоль параметр family из response.
-16. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
+11. Вывести в консоль параметр family из response.
+```
+console.log(MyData.family);
+console.log("Children= "+ MyData.family.children)
+```
+12. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
+```
+let resp_salary_1_5_year=req_salary*4
+pm.test("Salary 1_5 year from Response = Salary * 4 from Request", function () {
+        pm.expect(MyData.family.u_salary_1_5_year).to.eql(resp_salary_1_5_year);
+});
+```
+### Тесты пройдены :ok_hand:
