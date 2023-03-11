@@ -1,4 +1,5 @@
-# Postman ![Postman](https://img.shields.io/badge/-Postman-103606?style=for-the-badge&logo=Postman)
+ ![image](https://github.com/NatashaSmolyak/Postman/blob/main/assets/Postman-header-image.png)
+
 
 ### Тестирование ПО: Postman для тестирования API. [Сертификат](https://stepik.org/cert/1936752)
 ------
@@ -27,5 +28,16 @@ pm.test("Body is correct", function () {
 });
 ```
 ![image](https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_1.png)
+
+##### Задача 2
+1. Отправить http-запрос методом POST: **http:162.55.220.72:5005/user_info_3**
+2. Проверить, что возращается 200 статус код.
+
+Тест:
+```
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+```
 
 
