@@ -47,19 +47,19 @@ pm.test("Status code is 200", function () {
 ```
 let MyData = pm.response.json();
 ```
-4. Проверить, что name в ответе равно name с request (name вбить руками.)
+4. Проверить, что name в ответе равно name из request (name вбить руками.)
 ```
 pm.test("Name from Response = Name from Request", function () {
         pm.expect(MyData.name).to.eql("Natasha");
 });
 ```
-5. Проверить, что age в ответе равно age c request (age вбить руками.)
+5. Проверить, что age в ответе равно age из request (age вбить руками.)
 ```
 pm.test("Age from Response = Age from Request", function () {
        pm.expect(MyData.age).to.eql("50");
 });
 ```
-6. Проверить, что salary в ответе равно salary c request (salary вбить руками.)
+6. Проверить, что salary в ответе равно salary из request (salary вбить руками.)
 ```
 pm.test("Salary from Response = Salary from Request", function () {
         pm.expect(MyData.salary).to.eql(5000);
@@ -69,25 +69,25 @@ pm.test("Salary from Response = Salary from Request", function () {
 ```
 let req=request.data
 ```
-8. Проверить, что name в ответе равно name s request (name забрать из request.)
+8. Проверить, что name в ответе равно name из request (name забрать из request.)
 Создаем переменные: req_name, req_age, req_salary
 ```
-let req_name=req.name
-let req_age=req.age
-let req_salary=+req.salary
+let req_name=req.name;
+let req_age=req.age;
+let req_salary=+req.salary;
 ```
 ```
 pm.test("Name from Response = Name from Request", function () {
        pm.expect(MyData.name).to.eql(req_name);
 });
 ```
-9. Проверить, что age в ответе равно age с request (age забрать из request.)
+9. Проверить, что age в ответе равно age из request (age забрать из request.)
 ```
 pm.test("Age from Response = Age from Request", function () {
         pm.expect(MyData.age).to.eql(req_age);
 });
 ```
-10. Проверить, что salary в ответе равно salary с request (salary забрать из request.)
+10. Проверить, что salary в ответе равно salary из request (salary забрать из request.)
 ```
 pm.test("Salary from Response = Salary from Request", function () {
        pm.expect(MyData.salary).to.eql(req_salary);
@@ -111,3 +111,48 @@ pm.test("Salary 1_5 year from Response = Salary * 4 from Request", function () {
 <div id="screen" align="center" dir="auto">
 <p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_2.png">
 </p> </div>
+
+#### Задача 3
+
+1. Отправить http-запрос методом GET: **http:162.55.220.72:5005/object_info_3**
+2. Проверить, что возращается 200 статус код.
+```
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+```
+3. Спарсить response body в json.
+```
+let responseData = pm.response.json();
+```
+4. Спарсить request.
+```
+let requestData = pm.request.url.query.toObject()
+```
+5. Проверить, что name в ответе равно name из request (name забрать из request.)
+Создаем переменные: req_name, req_age, req_salary
+```
+let req_name=requestData.name;
+let req_age=requestData.age;
+let req_salary=+requestData.salary;
+```
+
+```
+pm.test("Name from Response = Name from Request", function () {
+        pm.expect(responseData.name).to.eql(req_name);
+});
+```
+
+6. Проверить, что age в ответе равно age из request (age забрать из request.)
+```
+pm.test("Age from Response = Age from Request", function () {
+        pm.expect(responseData.age).to.eql(req_age);
+});
+```
+
+7. Проверить, что salary в ответе равно salary из request (salary забрать из request.)
+```
+pm.test("Salary from Response = Salary from Request", function () {
+        pm.expect(responseData.salary).to.eql(req_salary);
+});
+```
