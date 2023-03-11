@@ -69,13 +69,13 @@ pm.test("Salary from Response = Salary from Request", function () {
 ```
 let req=request.data
 ```
-8. Проверить, что name в ответе равно name из request (name забрать из request.)
 Создаем переменные: req_name, req_age, req_salary
 ```
 let req_name=req.name;
 let req_age=req.age;
 let req_salary=+req.salary;
 ```
+8. Проверить, что name в ответе равно name из request (name забрать из request.)
 ```
 pm.test("Name from Response = Name from Request", function () {
        pm.expect(MyData.name).to.eql(req_name);
@@ -105,13 +105,11 @@ pm.test("Salary 1_5 year from Response = Salary * 4 from Request", function () {
         pm.expect(MyData.family.u_salary_1_5_year).to.eql(resp_salary_1_5_year);
 });
 ```
-
 ### Тесты пройдены :ok_hand:
 
 <div id="screen" align="center" dir="auto">
 <p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_2.png">
 </p> </div>
-
 
 #### Задача 3
 
@@ -130,27 +128,24 @@ let responseData = pm.response.json();
 ```
 let requestData = pm.request.url.query.toObject()
 ```
-5. Проверить, что name в ответе равно name из request (name забрать из request.)
 Создаем переменные: req_name, req_age, req_salary
 ```
 let req_name=requestData.name;
 let req_age=requestData.age;
 let req_salary=+requestData.salary;
 ```
-
+5. Проверить, что name в ответе равно name из request (name забрать из request.)
 ```
 pm.test("Name from Response = Name from Request", function () {
         pm.expect(responseData.name).to.eql(req_name);
 });
 ```
-
 6. Проверить, что age в ответе равно age из request (age забрать из request.)
 ```
 pm.test("Age from Response = Age from Request", function () {
         pm.expect(responseData.age).to.eql(req_age);
 });
 ```
-
 7. Проверить, что salary в ответе равно salary из request (salary забрать из request.)
 ```
 pm.test("Salary from Response = Salary from Request", function () {
