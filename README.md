@@ -152,3 +152,39 @@ pm.test("Salary from Response = Salary from Request", function () {
         pm.expect(responseData.salary).to.eql(req_salary);
 });
 ```
+8. Вывести в консоль параметр family из response.
+```
+console.log(responseData.family)
+```
+9. Проверить, что у параметра dog есть параметры name.
+```
+pm.test("The Dog parameter has a Name parameter", function () {
+       pm.expect(responseData.family.pets.dog).to.have.property("name")
+});
+```
+10. Проверить, что у параметра dog есть параметры age.
+```
+pm.test("The Dog parameter has an Age parameter", function () {
+   pm.expect(responseData.family.pets.dog).to.have.property("age")
+});
+```
+11. Проверить, что параметр name имеет значение Luky.
+```
+pm.test("The Dog name is Luky", function () {
+      pm.expect(responseData.family.pets.dog.name).to.eql("Luky")
+});
+```
+12. Проверить, что параметр age имеет значение 4.
+```
+pm.test("The Dog  is 4 years old", function () {
+    var responseData = pm.response.json();
+   pm.expect(responseData.family.pets.dog.age).to.eql(4)
+});
+```
+### Тесты пройдены :ok_hand:
+
+<div id="screen" align="center" dir="auto">
+<p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_3.png">
+</p> </div>
+
+#### Задача 4
