@@ -34,6 +34,11 @@ pm.test("Body is correct", function () {
 #### Задача 2
 
 1. Отправить http-запрос методом POST: **http:162.55.220.72:5005/user_info_3**
+
+Body запроса:
+<div id="screen" align="center" dir="auto">
+<p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/Body_form_data.png">
+</p> </div>
 2. Проверить, что возращается 200 статус код.
 
 Тест:
@@ -43,4 +48,7 @@ pm.test("Status code is 200", function () {
 });
 ```
 
-
+3. Спарсить response body в json.
+```
+let MyData = pm.response.json();
+```
