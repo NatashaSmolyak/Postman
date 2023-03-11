@@ -112,6 +112,7 @@ pm.test("Salary 1_5 year from Response = Salary * 4 from Request", function () {
 <p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_2.png">
 </p> </div>
 
+
 #### Задача 3
 
 1. Отправить http-запрос методом GET: **http:162.55.220.72:5005/object_info_3**
