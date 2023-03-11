@@ -11,6 +11,7 @@
 ##### Задача 1
 1. Отправить http-запрос методом GET: **http:162.55.220.72:5005/first**.
 2. Проверить, что возращается 200 статус код.
+
 Тест:
 ```
 pm.test("Status code is 200", function () {
@@ -18,6 +19,7 @@ pm.test("Status code is 200", function () {
 });
 ```
 3. Проверить, что в body приходит правильный string.
+
 Тест: 
 ```
 pm.test("Body is correct", function () {
