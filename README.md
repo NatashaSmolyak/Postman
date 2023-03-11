@@ -111,3 +111,4 @@ pm.test("Salary 1_5 year from Response = Salary * 4 from Request", function () {
 <div id="screen" align="center" dir="auto">
 <p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_2.png">
 </p> </div>
+
