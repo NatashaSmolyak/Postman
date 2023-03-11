@@ -1,8 +1,8 @@
 # Postman ![Postman](https://img.shields.io/badge/-Postman-103606?style=for-the-badge&logo=Postman)
 
-#### Тестирование ПО: Postman для тестирования API. [Сертификат](https://stepik.org/cert/1936752)
+### Тестирование ПО: Postman для тестирования API. [Сертификат](https://stepik.org/cert/1936752)
 ------
-#### Курс по тестированию ПО Вадима Ксендзова.
+### Курс по тестированию ПО Вадима Ксендзова.
 ***Страница находится в процессе разработки***.
 #### Задание 1. [Смотреть всю коллекцию](https://github.com/NatashaSmolyak/Postman/blob/main/Home_Work-1_Nata_Smolyak.postman_collection.json)
 #### Задание 2. [Смотреть всю коллекцию](https://github.com/NatashaSmolyak/Postman/blob/main/Home_Work-2_Nata_Smolyak.postman_collection.json)
