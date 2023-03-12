@@ -326,6 +326,12 @@ let responseData = pm.response.json();
 ```
 let requestData = request.data;
 ```
+Создаем переменные: req_name, req_age, req_salary
+```
+let req_name=requestData.name;
+let req_age=+requestData.age;
+let req_salary=+requestData.salary;
+```
 8. Проверить, что json response имеет параметр start_qa_salary.
 ```
 pm.test("JSON response has 'start_qa_salary' parameter", function () {
@@ -364,16 +370,55 @@ pm.test("JSON response has 'Pesson' parameter", function () {
 ```
 14. Проверить, что параметр start_qa_salary равен salary из request (salary забрать из request.)
 ```
-let req_start_salary=+requestData.salary
-pm.test("Start_qa_salary from Response = Start_qa_salary from Request", function () {
-    pm.expect(responseData.start_qa_salary).to.eql(req_start_salary)
+pm.test("Start_qa_salary from Response = Salary from Request", function () {
+    pm.expect(responseData.start_qa_salary).to.eql(req_salary)
 });
 ```
 15. Проверить, что параметр qa_salary_after_6_months равен salary*2 из request (salary забрать из request.)
+```
+pm.test("Qa_salary_after_6_months from Response = Salary * 2 из Requestt", function () {
+    pm.expect(responseData.qa_salary_after_6_months).to.eql(+req_salary*2);
+});
+```
 16. Проверить, что параметр qa_salary_after_12_months равен salary*2.7 из request (salary забрать из request.)
+```
+pm.test("Qa_salary_after_12_months from Response = Salary * 2.7 from Request", function () {
+    pm.expect(responseData.qa_salary_after_12_months).to.eql(req_salary*2.7)
+});
+```
 17. Проверить, что параметр qa_salary_after_1.5_year равен salary*3.3 из request (salary забрать из request.)
-18. Проверить, что параметр qa_salary_after_3.5_years равен salary*3.8 из request (salary забрать из request.)
+```
+pm.test("Qa_salary_after_1.5_year from Response = Salary * 3.3 from Request", function () {
+    pm.expect(responseData["qa_salary_after_1.5_year"]).to.eql(req_salary*3.3)
+});
+```
+18. Проверить, что параметр qa_salary_after_3.5_years равен salary*3.8 из request (salary забрать из request.).
+```
+pm.test("Qa_salary_after_3.5_years from Response = Salary * 3.8 from Request", function () {
+    pm.expect(responseData["qa_salary_after_3.5_years"]).to.eql(req_salary*3.8)
+});
+```
 19. Проверить, что в параметре person, 1-й элемент из u_name равен salary из request (salary забрать из request.)
+```
+pm.test("Person.u_name[1] from Response = Salary from Request", function () {
+    pm.expect(responseData.person.u_name[1]).to.eql(req_salary)
+   });
+```
 20. Проверить, что что параметр u_age равен age из request (age забрать из request.)
+```
+pm.test("Person.U_age from Response = Age from Request", function () {
+    pm.expect(responseData.person.u_age).to.eql(req_age)
+});
+```
 21. Проверить, что параметр u_salary_5_years равен salary*4.2 из request (salary забрать из request.)
-22. ***Написать цикл который выведет в консоль по порядку элементы списка из параметра pers
+```
+pm.test("u_salary_5_years from Response = u_salary_5_years from  Request", function () {
+    pm.expect(responseData.person.u_salary_5_years).to.eql(req_salary*4.2)
+});
+```
+22. ***Написать цикл который выведет в консоль по порядку элементы списка из параметра pers.
+```
+console.log("Person parametrs output with a loop")
+for  (let key in responseData.person)
+{console.log(key+ " = " +responseData.person[key])};
+```
