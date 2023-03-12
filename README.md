@@ -412,7 +412,7 @@ pm.test("Person.U_age from Response = Age from Request", function () {
 ```
 21. Проверить, что параметр u_salary_5_years равен salary*4.2 из request (salary забрать из request.)
 ```
-pm.test("u_salary_5_years from Response = u_salary_5_years from  Request", function () {
+pm.test("u_salary_5_years from Response = Salary * 4.2 from Request", function () {
     pm.expect(responseData.person.u_salary_5_years).to.eql(req_salary*4.2)
 });
 ```
@@ -422,3 +422,14 @@ console.log("Person parametrs output with a loop")
 for  (let key in responseData.person)
 {console.log(key+ " = " +responseData.person[key])};
 ```
+
+<div id="screen" align="center" dir="auto">
+<p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_5_console.png">
+</p> </div>
+
+### Тесты пройдены :ok_hand:
+
+<div id="screen" align="center" dir="auto">
+<p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_5.png">
+</p> </div>
+
