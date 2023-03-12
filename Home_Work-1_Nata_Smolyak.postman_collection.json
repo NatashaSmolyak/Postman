@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0298382a-410e-4372-8fbd-5642337121ef",
+		"_postman_id": "f721ac19-d4d0-45f6-989c-f9d9bd3aa51e",
 		"name": "Home_Work-1_Nata_Smolyak",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "23528871"
@@ -44,7 +44,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://162.55.220.72:5006/object_info_1?name=Natasha&age=50&weight=56",
+					"raw": "http://162.55.220.72:5005/object_info_1?name=Natasha&age=50&weight=56",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -52,7 +52,7 @@
 						"220",
 						"72"
 					],
-					"port": "5006",
+					"port": "5005",
 					"path": [
 						"object_info_1"
 					],
