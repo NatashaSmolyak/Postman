@@ -80,7 +80,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://162.55.220.72:5006/object_info_2?name=Natasha&age=50&salary=1200",
+					"raw": "http://162.55.220.72:5005/object_info_2?name=Natasha&age=50&salary=1200",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -88,7 +88,7 @@
 						"220",
 						"72"
 					],
-					"port": "5006",
+					"port": "5005",
 					"path": [
 						"object_info_2"
 					],
@@ -116,7 +116,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://162.55.220.72:5006/object_info_3?name=Natasha&age=50&salary=1200",
+					"raw": "http://162.55.220.72:5005/object_info_3?name=Natasha&age=50&salary=1200",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -124,7 +124,7 @@
 						"220",
 						"72"
 					],
-					"port": "5006",
+					"port": "5005",
 					"path": [
 						"object_info_3"
 					],
@@ -152,7 +152,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://162.55.220.72:5006/object_info_4?name=Natasha&age=50&salary=1200",
+					"raw": "http://162.55.220.72:5005/object_info_4?name=Natasha&age=50&salary=1200",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -160,7 +160,7 @@
 						"220",
 						"72"
 					],
-					"port": "5006",
+					"port": "5005",
 					"path": [
 						"object_info_4"
 					],
@@ -208,7 +208,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5006/user_info_3",
+					"raw": "http://162.55.220.72:5005/user_info_3",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -216,7 +216,7 @@
 						"220",
 						"72"
 					],
-					"port": "5006",
+					"port": "5005",
 					"path": [
 						"user_info_3"
 					]
@@ -250,7 +250,7 @@
 					]
 				},
 				"url": {
-					"raw": "http://162.55.220.72:5006/user_info_2",
+					"raw": "http://162.55.220.72:5005/user_info_2",
 					"protocol": "http",
 					"host": [
 						"162",
@@ -258,7 +258,7 @@
 						"220",
 						"72"
 					],
-					"port": "5006",
+					"port": "5005",
 					"path": [
 						"user_info_2"
 					]
