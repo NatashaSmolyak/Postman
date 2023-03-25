@@ -95,8 +95,8 @@ pm.test("Salary from Response = Salary from Request", function () {
 ```
 11. Вывести в консоль параметр family из response.
 ```
-console.log(MyData.family);
-console.log("Children= "+ MyData.family.children)
+for (let key in MyData.family)
+{console.log('Response family: '+ key +' --> ' +  MyData.family[key])}
 ```
 12. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
 ```
