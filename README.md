@@ -98,6 +98,10 @@ pm.test("Salary from Response = Salary from Request", function () {
 for (let key in MyData.family)
 {console.log('Response family: '+ key +' --> ' +  MyData.family[key])}
 ```
+<div id="screen" align="center" dir="auto">
+<p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_2_console.png">
+</p> </div>
+
 12. Проверить что u_salary_1_5_year в ответе равно salary*4 (salary забрать из request)
 ```
 let resp_salary_1_5_year=req_salary*4
