@@ -160,6 +160,11 @@ pm.test("Salary from Response = Salary from Request", function () {
 ```
 console.log(responseData.family)
 ```
+
+<div id="screen" align="center" dir="auto">
+<p dir="auto"> <img src="https://github.com/NatashaSmolyak/Postman/blob/main/assets/HW_2_Task_3_console.png">
+</p> </div>
+
 9. Проверить, что у параметра dog есть параметры name.
 ```
 pm.test("The Dog parameter has a Name parameter", function () {
