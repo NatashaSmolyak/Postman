@@ -7,6 +7,7 @@
 
 ### Задание 1. [Смотреть всю коллекцию](https://github.com/NatashaSmolyak/Postman/blob/main/Home_Work-1_Nata_Smolyak.postman_collection.json)
 ### Задание 2. [Смотреть всю коллекцию](https://github.com/NatashaSmolyak/Postman/blob/main/Home_Work-2_Nata_Smolyak.postman_collection.json)
+### Задание 3. [Смотреть всю коллекцию](https://github.com/NatashaSmolyak/Postman/blob/main/Home_Work-3_Nata_Smolyak.postman_collection.json)
 Также на данной страничке можно посмотреть порядок выполнения Задания 2 
 
 #### Задача 1
